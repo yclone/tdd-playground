@@ -1,0 +1,171 @@
+11:04:23 (24888) DEBUG ConfigReader Loading config from stryker.conf.mjs
+11:04:23 (24888) DEBUG ConfigReader Loaded config: {
+  "_comment": "This config was generated using 'stryker init'. Please take a look at: https://stryker-mutator.io/docs/stryker-js/configuration/ for more information.",
+  "packageManager": "npm",
+  "reporters": [
+    "html",
+    "clear-text",
+    "progress",
+    "dashboard"
+  ],
+  "testRunner": "jest",
+  "testRunner_comment": "More information about the command plugin can be found here: URL not found",
+  "coverageAnalysis": "perTest",
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "allowConsoleColors": true,
+  "checkers": [],
+  "checkerNodeArgs": [],
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "allowEmojis": false,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "dryRunOnly": false,
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "ignorePatterns": [],
+  "ignoreStatic": false,
+  "incremental": false,
+  "incrementalFile": "reports/stryker-incremental.json",
+  "force": false,
+  "inPlace": false,
+  "maxConcurrentTestRunners": 9007199254740991,
+  "maxTestRunnerReuse": 0,
+  "mutate": [
+    "{src,lib}/**/!(*.+(s|S)pec|*.+(t|T)est).+(cjs|mjs|js|ts|jsx|tsx|html|vue)",
+    "!{src,lib}/**/__tests__/**/*.+(cjs|mjs|js|ts|jsx|tsx|html|vue)"
+  ],
+  "mutator": {
+    "plugins": null,
+    "excludedMutations": []
+  },
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "appendPlugins": [],
+  "htmlReporter": {
+    "fileName": "reports/mutation/mutation.html"
+  },
+  "jsonReporter": {
+    "fileName": "reports/mutation/mutation.json"
+  },
+  "disableTypeChecks": "{test,src,lib}/**/*.{js,ts,jsx,tsx,html,vue}",
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "cleanTempDir": true,
+  "testRunnerNodeArgs": [],
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "dryRunTimeoutMinutes": 5,
+  "tsconfigFile": "tsconfig.json",
+  "warnings": true,
+  "disableBail": false
+}
+11:04:23 (24888) DEBUG PluginLoader Loading @stryker-mutator/* from C:\Users\vmarrasa\DEV\tdd-playground\node_modules\@stryker-mutator
+11:04:23 (24888) DEBUG PluginLoader Loading plugin file:///C:/Users/vmarrasa/DEV/tdd-playground/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+11:04:23 (24888) DEBUG MetaSchemaBuilder Contributing 0 schemas from plugins to options validation.
+11:04:23 (24888) INFO ProjectReader Found 3 of 12 file(s) to be mutated.
+11:04:23 (24888) DEBUG ProjectReader All input files: [
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\.gitignore",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\babel.config.js",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\package-lock.json",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\package.json",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\README.md",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\src\\01-the-longest-word\\the-longest-word.js",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\src\\01-the-longest-word\\the-longest-word.test.js",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\src\\02-factorial\\factorial.js",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\src\\02-factorial\\factorial.test.js",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\src\\02-factorial\\utils\\error-message.js",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\stryker.conf.mjs",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\yarn.lock"
+]
+11:04:23 (24888) DEBUG ProjectReader Files to mutate: [
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\src\\01-the-longest-word\\the-longest-word.js",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\src\\02-factorial\\factorial.js",
+  "C:\\Users\\vmarrasa\\DEV\\tdd-playground\\src\\02-factorial\\utils\\error-message.js"
+]
+11:04:23 (24888) DEBUG TemporaryDirectory Using temp directory "C:\Users\vmarrasa\DEV\tdd-playground\.stryker-tmp"
+11:04:23 (24888) DEBUG Instrumenter Instrumenting 3 source files with mutants
+11:04:24 (24888) DEBUG Instrumenter Instrumented src\01-the-longest-word\the-longest-word.js (18 mutant(s))
+11:04:24 (24888) DEBUG Instrumenter Instrumented src\02-factorial\factorial.js (9 mutant(s))
+11:04:24 (24888) DEBUG Instrumenter Instrumented src\02-factorial\utils\error-message.js (1 mutant(s))
+11:04:24 (24888) INFO Instrumenter Instrumented 3 source file(s) with 28 mutant(s)
+11:04:24 (24888) INFO ConcurrencyTokenProvider Creating 7 test runner process(es).
+11:04:24 (24888) DEBUG ChildProcessProxy Started CheckerWorker in worker process 0 with pid 14660 
+11:04:24 (24888) TRACE ChildProcessProxy Debugger 
+11:04:24 (24888) TRACE ChildProcessProxy attached.
+
+11:04:26 (14660) DEBUG PluginLoader Loading plugin file:///C:/Users/vmarrasa/DEV/tdd-playground/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+11:04:26 (24888) DEBUG Sandbox Creating a sandbox for files in C:\Users\vmarrasa\DEV\tdd-playground\.stryker-tmp\sandbox1567847
+11:04:26 (24888) DEBUG Sandbox Start symlink node_modules
+11:04:26 (24888) DEBUG Sandbox Create symlink from C:\Users\vmarrasa\DEV\tdd-playground\node_modules to C:\Users\vmarrasa\DEV\tdd-playground\.stryker-tmp\sandbox1567847\node_modules
+11:04:26 (24888) DEBUG BroadcastReporter Broadcasting to reporters ["html","clear-text","progress","dashboard"]
+11:04:26 (24888) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 0 with pid 22968 
+11:04:27 (24888) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 1 with pid 17468 
+11:04:27 (24888) TRACE ChildProcessProxy Debugge
+11:04:27 (24888) TRACE ChildProcessProxy r attached.
+
+11:04:27 (24888) TRACE ChildProcessProxy Debugger
+11:04:27 (24888) TRACE ChildProcessProxy  attached.
+
+11:04:29 (17468) DEBUG PluginLoader Loading plugin file:///C:/Users/vmarrasa/DEV/tdd-playground/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+11:04:29 (22968) DEBUG PluginLoader Loading plugin file:///C:/Users/vmarrasa/DEV/tdd-playground/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+11:04:29 (17468) DEBUG ChildProcessProxyWorker Changing current working directory for this process to C:\Users\vmarrasa\DEV\tdd-playground\.stryker-tmp\sandbox1567847
+11:04:29 (24888) DEBUG ChildProcessProxy Disposing of worker process 17468
+11:04:29 (24888) DEBUG Stryker Not removing the temp dir because an error occurred
+11:04:29 (24888) ERROR Stryker Unexpected error occurred while running Stryker StrykerError: Error: Could not inject [class ChildProcessTestRunnerWorker]. Cause: Cannot find TestRunner plugin "jest". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+Error: Could not inject [class ChildProcessTestRunnerWorker]. Cause: Cannot find TestRunner plugin "jest". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+    at Function.create (C:\Users\vmarrasa\DEV\tdd-playground\node_modules\typed-inject\dist\src\errors.js:58:20)
+    at ClassProvider.injectClass (C:\Users\vmarrasa\DEV\tdd-playground\node_modules\typed-inject\dist\src\InjectorImpl.js:45:43)
+    at ChildProcessProxyWorker.handleInit (file:///C:/Users/vmarrasa/DEV/tdd-playground/node_modules/@stryker-mutator/core/dist/src/child-proxy/child-process-proxy-worker.js:70:41)
+    at ChildProcess.<anonymous> (file:///C:/Users/vmarrasa/DEV/tdd-playground/node_modules/@stryker-mutator/core/dist/src/child-proxy/child-process-proxy.js:158:39)
+    at ChildProcess.emit (events.js:400:28)
+    at emit (internal/child_process.js:912:12)
+    at processTicksAndRejections (internal/process/task_queues.js:83:21) {
+  innerError: undefined
+}
+11:04:29 (24888) INFO Stryker This might be a known problem with a solution documented in our troubleshooting guide.
+11:04:29 (24888) INFO Stryker You can find it at https://stryker-mutator.io/docs/stryker-js/troubleshooting/
+11:04:29 (24888) WARN ChildProcessTestRunnerProxy An unexpected error occurred during test runner disposal. This might be worth looking into. Stryker will ignore this error. StrykerError: Error: Could not inject [class ChildProcessTestRunnerWorker]. Cause: Cannot find TestRunner plugin "jest". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+Error: Could not inject [class ChildProcessTestRunnerWorker]. Cause: Cannot find TestRunner plugin "jest". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+    at Function.create (C:\Users\vmarrasa\DEV\tdd-playground\node_modules\typed-inject\dist\src\errors.js:58:20)
+    at ClassProvider.injectClass (C:\Users\vmarrasa\DEV\tdd-playground\node_modules\typed-inject\dist\src\InjectorImpl.js:45:43)
+    at ChildProcessProxyWorker.handleInit (file:///C:/Users/vmarrasa/DEV/tdd-playground/node_modules/@stryker-mutator/core/dist/src/child-proxy/child-process-proxy-worker.js:70:41)
+    at ChildProcess.<anonymous> (file:///C:/Users/vmarrasa/DEV/tdd-playground/node_modules/@stryker-mutator/core/dist/src/child-proxy/child-process-proxy.js:158:39)
+    at ChildProcess.emit (events.js:400:28)
+    at emit (internal/child_process.js:912:12)
+    at processTicksAndRejections (internal/process/task_queues.js:83:21) {
+  innerError: undefined
+}
+11:04:29 (24888) DEBUG ChildProcessProxy Kill 17468
+11:04:29 (22968) DEBUG ChildProcessProxyWorker Changing current working directory for this process to C:\Users\vmarrasa\DEV\tdd-playground\.stryker-tmp\sandbox1567847
+11:04:29 (24888) DEBUG ChildProcessProxy Disposing of worker process 22968
+11:04:29 (24888) WARN ChildProcessTestRunnerProxy An unexpected error occurred during test runner disposal. This might be worth looking into. Stryker will ignore this error. StrykerError: Error: Could not inject [class ChildProcessTestRunnerWorker]. Cause: Cannot find TestRunner plugin "jest". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+Error: Could not inject [class ChildProcessTestRunnerWorker]. Cause: Cannot find TestRunner plugin "jest". In fact, no TestRunner plugins were loaded. Did you forget to install it?
+    at Function.create (C:\Users\vmarrasa\DEV\tdd-playground\node_modules\typed-inject\dist\src\errors.js:58:20)
+    at ClassProvider.injectClass (C:\Users\vmarrasa\DEV\tdd-playground\node_modules\typed-inject\dist\src\InjectorImpl.js:45:43)
+    at ChildProcessProxyWorker.handleInit (file:///C:/Users/vmarrasa/DEV/tdd-playground/node_modules/@stryker-mutator/core/dist/src/child-proxy/child-process-proxy-worker.js:70:41)
+    at ChildProcess.<anonymous> (file:///C:/Users/vmarrasa/DEV/tdd-playground/node_modules/@stryker-mutator/core/dist/src/child-proxy/child-process-proxy.js:158:39)
+    at ChildProcess.emit (events.js:400:28)
+    at emit (internal/child_process.js:912:12)
+    at processTicksAndRejections (internal/process/task_queues.js:83:21) {
+  innerError: undefined
+}
+11:04:29 (24888) DEBUG ChildProcessProxy Disposing of worker process 14660
+11:04:29 (24888) DEBUG ChildProcessProxy Kill 22968
+11:04:30 (24888) DEBUG ChildProcessProxy Kill 14660
